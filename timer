@@ -1,0 +1,17 @@
+object timer {} {
+    mainpulse as connector
+    mainpulse -> connector -> connector -> mainpulse
+    mainpulse
+}
+
+bpm as timer
+
+
+
+timer -> sound {
+    freq = 220
+}
+
+timer -> sound {
+    freq = 100
+}

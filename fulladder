@@ -1,0 +1,28 @@
+a as flipflop
+b as flipflop
+c as flipflop
+
+axor as xor
+
+a -> axor
+b -> axor
+
+sum as xor
+
+axor -> sum
+c -> sum
+
+aand as and
+
+a -> aand
+b -> aand
+
+carryand as and
+
+axor -> carryand
+c -> carryand
+
+carry as or
+
+aand -> carry
+carryand -> carry

@@ -1,0 +1,13 @@
+soundBlock as sound {
+    color {
+        r 200
+        g 127
+        b 94
+    }
+    freq 220.74
+    state false
+}
+
+soundButton as button
+
+button -> sound

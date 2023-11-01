@@ -1,0 +1,21 @@
+block halfadder (
+    a as flipflop 
+    b as flipflop
+) {  
+    sum as xor
+    a -> sum
+    b -> sum
+
+    carry as and
+    a -> carry
+    b -> carry
+
+    sum carry
+}
+
+
+a as flipflop 
+b as flipflop 
+
+(sum carry) as halfadder {a b}
+(secondsum secondcarry) as halfadder {a b}
